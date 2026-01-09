@@ -4,14 +4,22 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var alienX = 70;
+var topY = 45;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
   
+  fill (121, 123, 125);
+  ellipse(alienX, topY, 70, 70);
+  ellipse(alienX topY, 50, 50);
+  ellipse(alienX, 60, 140, 45);
+  
 
+  textSize(80)
+text("🐄",300,290);
 
 
 
