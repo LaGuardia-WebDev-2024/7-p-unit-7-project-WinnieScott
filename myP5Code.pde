@@ -5,6 +5,7 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var alienX = 70;
+var alienY = 60
 var topY = 45;
 
 //🟢Draw Procedure - Runs on Repeat
@@ -14,16 +15,28 @@ draw = function(){
   
   fill (121, 123, 125);
   ellipse(alienX, topY, 70, 70);
-  ellipse(alienX topY, 50, 50);
-  ellipse(alienX, 60, 140, 45);
+  fill (66, 212, 153);
+  ellipse(alienX, topY, 50, 50);
+  fill (121, 123, 125);
+  ellipse(alienX, alienY, 140, 45);
+  fill (66, 212, 153);
+  ellipse(alienX-50, alienY, 10, 10)
+  ellipse(alienX-25, alienY+5, 10, 10)
+  ellipse(alienX, alienY+7, 10, 10)
+  ellipse(alienX+25, alienY+5, 10, 10)
+  ellipse(alienX+50, alienY, 10, 10)
+
+  quad(alienX-10, 80, alienX+10, 80, alienX+30, 300, alienX-30, 300)
   
 
-  textSize(80)
+  textSize(80);
 text("🐄",300,290);
 
 
 
+//alienX += 1;
 
+if(alienX > 360){alienX=361};
 
   if(mousePressed){showXYPositions();}
 
