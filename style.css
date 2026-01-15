@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
 body {
-  background-color: rgb(37, 150, 190);
+  background-color: rgb(13, 57, 114);
   text-align: center;
   color: rgb(224, 244, 247);
 }
@@ -15,9 +15,14 @@ body {
 }
 
 h1{
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "Bangers", system-ui;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 70px;
   font-style: normal;
+  color:gold;  
 }
 
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;}

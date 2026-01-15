@@ -11,6 +11,7 @@ var beam = 0;
 var cowY = 290;
 var cowSize = 80;
 var cowX = 303;
+var cowGone =0;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
@@ -48,6 +49,10 @@ draw = function(){
   ellipse(alienX+25, alienY+5, 10, 10)
   ellipse(alienX+50, alienY, 10, 10)
 
+  fill(255)
+  textSize(cowSize);
+ text("",cowX, cowY);
+
 alienX += 1;
 beam += 3;
 cowY -= 1;
@@ -55,9 +60,9 @@ cowSize -= .3;
 cowX += .2;
 
 
-if(alienX > 360){alienX=361};
+if(alienX > 360 && cowGone== 0){alienX=361};
 
-if(alienX > 360){beam=100}
+if(alienX > 360 && cowGone== 0){beam=100}
 
 if(alienX < 361){cowY=290}
 
@@ -65,13 +70,15 @@ if(alienX < 361){cowSize=80}
 
 if(alienX < 361){cowX=303}
 
-if(cowY < 48){cowY=-10}
+if(cowY < 48){cowY=-10; cowGone=1}
 
 if(cowY < -9){beam=0}
 
 if(alienX < 355){beam=0}
 
 if(cowY < -9){alienX }
+
+if(cowGone==1){alienX += 1}
 
 
 
